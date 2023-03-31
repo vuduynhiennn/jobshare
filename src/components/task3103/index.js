@@ -45,13 +45,16 @@ const Task3103 = () => {
                             {article.date}
                         </div>
 
-                        <h1 className={styles["article_title"]}>
-                            {article.title} 
-                        </h1>
+                        <div className={styles.title_content_ctn}>
+                                
+                            <h1 className={styles["article_title"]}>
+                                {article.title} 
+                            </h1>
 
-                        <p className={styles["article_content"]}>
-                            {article.content}
-                        </p>
+                            <p className={styles["article_content"]}>
+                                {article.content}
+                            </p>
+                        </div>
                     </div>
                 ))}
             </div>}
