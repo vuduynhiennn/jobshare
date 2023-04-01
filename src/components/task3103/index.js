@@ -10,11 +10,9 @@ const Task3103 = () => {
         const article_highlight = data.filter((data) => {
             return data.status === "highlight"
         })
-
         const articles_rest = data.filter((data => {
             return data.status !== "highlight"
         }))
-
         setArticle_highlight(article_highlight[0])
         setArticles(articles_rest)
     }, []);
@@ -31,7 +29,7 @@ const Task3103 = () => {
                     <div className={styles["article_highlight_date"]}> {article_highlight.date} </div>
                     <h1 className={`${styles.article_title} ${styles.article_highlight_title}`}> {article_highlight.title} </h1>
                     <div className={styles["article_highlight_content"]}>{article_highlight.content}</div>
-                    <a className="readmore_button" href="localhost"> Xem tiếp...</a>
+                    <a className={`${styles.readmore_button} readmore_button`} href="localhost"> Xem tiếp...</a>
                 </div>
             </div>}
             
